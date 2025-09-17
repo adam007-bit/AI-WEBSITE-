@@ -1,68 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Blog / Resources | AI Web Solutions</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | AI Web Solutions</title>
   <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gradient-to-r from-indigo-950 via-purple-900 to-indigo-950 text-white font-sans">
 
-  <!-- Navbar -->
+  <!-- ✅ SEO Meta Tags -->
+  <meta name="description" content="Read our latest articles on AI web apps, chatbot integration, dashboards, and automation for modern businesses.">
+  <meta name="keywords" content="AI Blog, Chatbot Integration, AI Web Apps, AI Dashboards">
+  <meta property="og:title" content="AI Web Solutions Blog">
+  <meta property="og:description" content="Insights and guides on AI-powered websites, chatbots, and dashboards.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://yourwebsite.com/images/blog-preview.jpg">
+  <meta property="og:url" content="https://yourwebsite.com/blog.html">
+</head>
+<body class="bg-gradient-to-r from-cyan-950 via-teal-900 to-cyan-950 text-white font-sans">
+
+  <!-- Navbar (Sticky) -->
   <nav class="flex justify-between items-center px-8 py-4 bg-black/40 backdrop-blur-md sticky top-0 z-50 shadow-md">
-    <a href="index.html" class="text-2xl font-extrabold">AI Web Solutions</a>
+    <a href="index.html" class="text-2xl font-extrabold tracking-wide">AI Web Solutions</a>
     <div class="hidden md:flex space-x-6 text-lg">
-      <a href="about.html" class="hover:text-purple-400">About</a>
-      <a href="services.html" class="hover:text-purple-400">Services</a>
-      <a href="portfolio.html" class="hover:text-purple-400">Portfolio</a>
-      <a href="products.html" class="hover:text-purple-400">Products</a>
-      <a href="blog.html" class="text-purple-400">Blog</a>
-      <a href="contact.html" class="bg-purple-600 px-4 py-2 rounded-lg hover:bg-purple-700 transition">Contact</a>
+      <a href="about.html" class="hover:text-teal-400 transition">About</a>
+      <a href="services.html" class="hover:text-teal-400 transition">Services</a>
+      <a href="portfolio.html" class="hover:text-teal-400 transition">Portfolio</a>
+      <a href="products.html" class="hover:text-teal-400 transition">Products</a>
+      <a href="blog.html" class="text-teal-400">Blog</a>
+      <a href="contact.html" class="bg-teal-600 px-4 py-2 rounded-lg hover:bg-teal-700 transition">Contact</a>
     </div>
   </nav>
 
-  <!-- Blog Section -->
-  <section class="px-6 py-20 max-w-5xl mx-auto">
-    <h1 class="text-4xl font-bold text-center mb-12">Blog & Resources</h1>
+  <!-- Page Header -->
+  <header class="text-center py-16 px-6">
+    <h1 class="text-5xl font-extrabold mb-4">Our Blog</h1>
+    <p class="text-gray-300 max-w-2xl mx-auto text-lg">Insights, tutorials, and guides on AI-powered websites, chatbots, and dashboards.</p>
+  </header>
 
-    <div class="grid md:grid-cols-2 gap-10">
-      <!-- Post 1 -->
-      <article class="bg-white/10 p-6 rounded-2xl shadow hover:scale-105 transition">
-        <h2 class="text-2xl font-semibold mb-3">5 Ways AI Chatbots Boost Sales in E-commerce</h2>
-        <p class="text-gray-300 mb-4">Discover how AI-driven chatbots improve conversions and enhance customer experience.</p>
-        <a href="#" class="text-purple-400 hover:underline">Read More →</a>
-      </article>
+  <!-- Blog Grid -->
+  <section class="max-w-6xl mx-auto px-6 grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+    
+    <!-- Blog Post Card -->
+    <article class="bg-white/10 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition">
+      <img src="images/chatbot-integration.jpg" alt="Chatbot Integration Guide" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h2 class="text-2xl font-bold mb-2">How to Integrate a Chatbot into Your Website (2025 Guide)</h2>
+        <p class="text-gray-300 mb-4">Step-by-step tutorial on adding AI chatbots to your site, from setup to deployment.</p>
+        <a href="blog-post-1.html" class="text-teal-400 hover:underline">Read More →</a>
+      </div>
+    </article>
 
-      <!-- Post 2 -->
-      <article class="bg-white/10 p-6 rounded-2xl shadow hover:scale-105 transition">
-        <h2 class="text-2xl font-semibold mb-3">How to Add GPT to Any Website in 1 Hour</h2>
-        <p class="text-gray-300 mb-4">Step-by-step guide for integrating GPT-powered assistants into your site quickly.</p>
-        <a href="#" class="text-purple-400 hover:underline">Read More →</a>
-      </article>
+    <!-- Blog Post Card -->
+    <article class="bg-white/10 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition">
+      <img src="images/ai-dashboards.jpg" alt="AI Dashboards" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h2 class="text-2xl font-bold mb-2">AI Dashboards: Turning Data into Insights</h2>
+        <p class="text-gray-300 mb-4">Learn how AI dashboards help you track KPIs, trends, and make data-driven decisions.</p>
+        <a href="blog-post-2.html" class="text-teal-400 hover:underline">Read More →</a>
+      </div>
+    </article>
 
-      <!-- Post 3 -->
-      <article class="bg-white/10 p-6 rounded-2xl shadow hover:scale-105 transition">
-        <h2 class="text-2xl font-semibold mb-3">Best Tools for AI-Powered Web Development in 2025</h2>
-        <p class="text-gray-300 mb-4">A curated list of cutting-edge tools to build smarter websites with AI.</p>
-        <a href="#" class="text-purple-400 hover:underline">Read More →</a>
-      </article>
-    </div>
+    <!-- Blog Post Card -->
+    <article class="bg-white/10 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition">
+      <img src="images/ai-content.jpg" alt="AI Content Creation" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h2 class="text-2xl font-bold mb-2">AI for Content Creation: Save Time and Boost Quality</h2>
+        <p class="text-gray-300 mb-4">See how businesses use AI to generate content faster while maintaining quality.</p>
+        <a href="blog-post-3.html" class="text-teal-400 hover:underline">Read More →</a>
+      </div>
+    </article>
 
-    <!-- Lead Magnet -->
-    <div class="bg-purple-800/40 mt-16 p-8 rounded-2xl text-center shadow-lg">
-      <h3 class="text-2xl font-bold mb-4">Free Guide</h3>
-      <p class="mb-4">Download our PDF: <em>Top 10 AI Tools for Business Websites</em></p>
-      <form class="flex flex-col sm:flex-row justify-center gap-4 max-w-md mx-auto">
-        <input type="email" placeholder="Enter your email" class="px-4 py-2 rounded-lg text-black w-full">
-        <button class="bg-purple-600 px-6 py-2 rounded-lg hover:bg-purple-700 transition">Download</button>
-      </form>
-    </div>
   </section>
 
   <!-- Footer -->
-  <footer class="text-center py-8 bg-black/60">
-    <p class="text-gray-400">© 2025 AI Web Solutions | <a href="contact.html" class="hover:text-purple-400">Contact Us</a></p>
+  <footer class="text-center py-8 bg-black/60 mt-12">
+    <p class="text-gray-400">© 2025 AI Web Solutions | 
+      <a href="contact.html" class="hover:text-teal-400 transition">Contact Us</a>
+    </p>
   </footer>
-<script src="//code.tidio.co/78x5m0honbufadywjdgbzzdkydyqxggy.js" async></script>
+
+  <!-- ✅ Tidio Chatbot -->
+  <script src="//code.tidio.co/78x5m0honbufadywjdgbzzdkydyqxggy.js" async></script>
 </body>
 </html>
+
