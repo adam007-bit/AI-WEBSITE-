@@ -3,60 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | AI Web Solutions</title>
+  <title>About Us | AI Web Solutions</title>
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- ✅ SEO -->
+  <meta name="description" content="Learn more about AI Web Solutions, our mission, and our team of AI and web experts.">
+  <meta name="keywords" content="AI Web Solutions, About, AI Experts, Web Design">
+  <meta property="og:title" content="About Us - AI Web Solutions">
+  <meta property="og:description" content="Meet the AI Web Solutions team and discover how we create smarter websites.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/about-team.jpg">
+  <meta property="og:url" content="https://yourwebsite.com/about.html">
 </head>
-<body class="bg-gradient-to-r from-cyan-950 via-teal-900 to-cyan-950 text-white font-sans">
+<body class="bg-gradient-to-r from-indigo-900 via-purple-900 to-indigo-900 text-white">
 
   <!-- Navbar -->
-  <nav class="flex justify-between items-center px-8 py-4 bg-black/40 backdrop-blur-md sticky top-0 z-50 shadow-md">
-    <a href="index.html" class="text-2xl font-extrabold tracking-wide">AI Web Solutions</a>
-    <div class="hidden md:flex space-x-6 text-lg">
-      <a href="about.html" class="text-teal-400">About</a>
-      <a href="services.html" class="hover:text-teal-400 transition">Services</a>
-      <a href="portfolio.html" class="hover:text-teal-400 transition">Portfolio</a>
-      <a href="products.html" class="hover:text-teal-400 transition">Products</a>
-      <a href="blog.html" class="hover:text-teal-400 transition">Blog</a>
-      <a href="contact.html" class="bg-teal-600 px-4 py-2 rounded-lg hover:bg-teal-700 transition">Contact</a>
+  <nav class="flex justify-between items-center p-4 bg-black bg-opacity-50 sticky top-0">
+    <a href="index.html" class="text-2xl font-bold">AI Web Solutions</a>
+    <div class="space-x-4">
+      <a href="about.html" class="text-purple-400">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="products.html">Products</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html" class="bg-purple-600 px-3 py-1 rounded">Contact</a>
     </div>
   </nav>
 
-  <!-- About Section -->
-  <section class="px-6 py-20 max-w-4xl mx-auto text-center">
-    <h1 class="text-4xl font-bold mb-8">About Me</h1>
-    <img src="https://via.placeholder.com/200" alt="Profile" class="mx-auto rounded-full shadow-lg mb-6">
-    <p class="text-lg text-gray-200 mb-8">
-      I build AI-powered websites, chatbots, and automation tools to help businesses grow.
-    </p>
+  <!-- About Header -->
+  <header class="text-center py-16 px-6">
+    <h1 class="text-5xl font-extrabold mb-4">About Us</h1>
+    <p class="text-lg max-w-2xl mx-auto text-gray-200">We build AI-powered websites and apps that help businesses grow smarter, faster, and more efficient.</p>
+  </header>
 
-    <div class="bg-white/10 p-8 rounded-2xl shadow-lg mb-12">
-      <h2 class="text-2xl font-semibold mb-4">My Story</h2>
-      <p>
-        With months of experience building AI + web solutions, I’ve worked on projects for startups, e-commerce, and enterprises.
-        My mission is to help businesses innovate with AI technology.
-      </p>
+  <!-- Mission Section -->
+  <section class="px-6 py-12 max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+    <div>
+      <h2 class="text-3xl font-bold mb-4">Our Mission</h2>
+      <p class="text-gray-300">At AI Web Solutions, we believe in merging creativity with AI technology to help businesses thrive in the digital age. From chatbots to dashboards, we deliver solutions that solve real-world problems.</p>
     </div>
+    <img src="images/about-mission.jpg" alt="Our Mission" class="rounded-lg shadow-lg">
+  </section>
 
-    <div class="grid md:grid-cols-2 gap-8 mb-12">
-      <div class="bg-white/10 p-6 rounded-xl shadow">
-        <h3 class="text-xl font-semibold mb-2">Skills & Tools</h3>
-        <p>React, Next.js, Flask, Hugging Face, OpenAI API, Tailwind, AWS</p>
+  <!-- Team Section -->
+  <section class="px-6 py-12 bg-black bg-opacity-40">
+    <h2 class="text-3xl font-bold text-center mb-10">Meet the Team</h2>
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="bg-white bg-opacity-10 p-6 rounded-lg shadow text-center">
+        <img src="images/team1.jpg" alt="Team Member 1" class="w-28 h-28 mx-auto rounded-full mb-4 object-cover">
+        <h3 class="text-xl font-semibold">Sarah Lee</h3>
+        <p class="text-gray-300">AI Engineer</p>
       </div>
-      <div class="bg-white/10 p-6 rounded-xl shadow">
-        <h3 class="text-xl font-semibold mb-2">Highlights</h3>
-        <p>Worked with 50+ clients | 100+ projects | Published tutorials & guides</p>
+      <div class="bg-white bg-opacity-10 p-6 rounded-lg shadow text-center">
+        <img src="images/team2.jpg" alt="Team Member 2" class="w-28 h-28 mx-auto rounded-full mb-4 object-cover">
+        <h3 class="text-xl font-semibold">John Smith</h3>
+        <p class="text-gray-300">Web Developer</p>
+      </div>
+      <div class="bg-white bg-opacity-10 p-6 rounded-lg shadow text-center">
+        <img src="images/team3.jpg" alt="Team Member 3" class="w-28 h-28 mx-auto rounded-full mb-4 object-cover">
+        <h3 class="text-xl font-semibold">Aisha Khan</h3>
+        <p class="text-gray-300">UX Designer</p>
       </div>
     </div>
-
-    <a href="contact.html" class="bg-teal-600 hover:bg-teal-700 px-6 py-3 rounded-lg font-semibold shadow-lg">
-      Let’s work together →
-    </a>
   </section>
 
   <!-- Footer -->
-  <footer class="text-center py-8 bg-black/60">
-    <p class="text-gray-400">© 2025 AI Web Solutions | <a href="contact.html" class="hover:text-teal-400 transition">Contact Us</a></p>
+  <footer class="text-center py-6 bg-black bg-opacity-60 mt-10">
+    <p>© 2025 AI Web Solutions | <a href="contact.html">Contact Us</a></p>
   </footer>
-<script src="//code.tidio.co/78x5m0honbufadywjdgbzzdkydyqxggy.js" async></script>
+
+  <!-- ✅ Tidio Chatbot -->
+  <script src="//code.tidio.co/78x5m0honbufadywjdgbzzdkydyqxggy.js" async></script>
 </body>
 </html>
+
